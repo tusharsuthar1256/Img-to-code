@@ -38,10 +38,10 @@ export const fileToGenerativePart = (file) => {
             }
           } catch (error) {
             if (error.message.includes("503") && attempt < MAX_RETRIES) {
-              console.warn(`Attempt ${attempt} failed. Retrying in ${RETRY_DELAY}ms...`);
+              // console.warn(`Attempt ${attempt} failed. Retrying in ${RETRY_DELAY}ms...`);
               await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY));
             } else {
-              console.error("Error while generating response:", error);
+              // console.error("Error while generating response:", error);
               return `Error while generating response: ${error.message}`;
             }
           }
