@@ -29,11 +29,7 @@ function Nav() {
             <Sun className="h-5 w-5" />
           </button>
         </a>
-        <a href="https://github.com/tusharsuthar1256/Img-to-code">
-          <button className="text-[#afaec8] hover:text-[#9290C3] bg-[#1B1A55] hover:bg-[#323082] p-2 rounded-md dark:text-[#FFF2D7] dark:bg-[#D8AE7E]">
-            <Github className="h-5 w-5" />
-          </button>
-        </a>
+
       </div>
     </nav>
     {loading ? <Loader/> : <div className="w-full h-[3px] bg-[] dark:bg-[#D8AE7E]"></div>}
